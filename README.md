@@ -13,3 +13,6 @@ On the list below, mark the implemented elements:
 - [ ] Uses pointers
 - [ ] Does not contain global variables
 - [ ] Does not use libraries beyond the ANSI C standard 
+
+## Instructions
+- bash file 'startb' needs to be given permissions under linux: chmod u+x startb

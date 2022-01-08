@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "gcc -o book.out core/src/main.c -lm"
+gcc -o book.out core/src/main.c -lm
+./book.out
