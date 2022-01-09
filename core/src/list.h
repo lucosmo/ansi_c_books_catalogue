@@ -11,4 +11,8 @@ typedef struct {
     ListNode* head;
 } ListBooks;
 
+ListBooks* createList(void);
+void display(ListBooks*);
+void insertOnCreate(ListBooks* list, Book* data);
+
 #endif
