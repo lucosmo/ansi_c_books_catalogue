@@ -4,6 +4,6 @@
 #include "book.h"
 
 int main() {
-    printf("Book catalogue");
+    printf("Book catalogue\n");
     return 0;
 }
