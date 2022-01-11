@@ -37,10 +37,10 @@ void insertAtEnd(ListBooks* list, Book* data) {
 
 void display(ListBooks* list) {
   ListNode* current = (ListNode*)malloc(sizeof(ListNode));
-  printf("Head: %p\n", list->head);
+  printf("\nHead: %p\n", list->head);
   current = list->head;
   while(current != NULL) {
-    printf("current %p, next %p", current, current->next);
+    printf("- current %p, value is %p, - next %p\n", current, current->data, current->next);
     current = current->next;
   }
 }
