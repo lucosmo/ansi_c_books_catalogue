@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "list.h"
 #include "book.h"
+#include "list.h"
+
 
 ListBooks* createList(void) {
   return (ListBooks*)malloc(sizeof(ListBooks));
@@ -29,7 +30,8 @@ void display(ListBooks* list) {
 }
 
 void freeList(ListBooks* list) {
-  ListNode* current, next;
+  ListNode* current;
+  ListNode* next;
   current = list->head;
   while(current != NULL) {
     next = current->next;
