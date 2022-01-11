@@ -18,7 +18,7 @@ void insertOnBeginning(ListBooks* list, Book* data) {
   }
 }
 
-void display(ListBooks*) {
+void display(ListBooks* list) {
   ListNode* current = (ListNode*)malloc(sizeof(ListNode));
   printf("Head: %p\n", list->head);
   current = list->head;
@@ -26,4 +26,15 @@ void display(ListBooks*) {
     printf("current %p, next %p", current, current->next);
     current = current->next;
   }
+}
+
+void freeList(ListBooks* list) {
+  ListNode* current, next;
+  current = list->head;
+  while(current != NULL) {
+    next = current->next;
+    free(current);
+    current = next;
+  }
+  free(list);
 }
