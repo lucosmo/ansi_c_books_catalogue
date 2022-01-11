@@ -28,10 +28,10 @@ void insertAtEnd(ListBooks* list, Book* data) {
     list->head = new;
   else {
     current = list->head;
-    while(current != NULL) {
+    while(current->next != NULL) {
       current = current->next;
     }
-    current = new;
+    current->next = new;
   }
 }
 
