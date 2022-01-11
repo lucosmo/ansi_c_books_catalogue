@@ -4,5 +4,16 @@
 #include "book.h"
 
 ListBooks* createList(void) {
-    return (ListBooks*)calloc(1, sizeof(ListBooks));
+  return (ListBooks*)malloc(sizeof(ListBooks));
+}
+
+void insertOnBeginning(ListBooks* list, Book* data) {
+  ListNode* new = (ListNode*)malloc(sizeof(ListNode));
+  new->data = data;
+  if(list->head == NULL)
+    list->head = new;
+  else {
+    new->next = list->head;
+    list->head = new;
+  }
 }

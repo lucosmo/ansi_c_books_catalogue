@@ -13,6 +13,6 @@ typedef struct {
 
 ListBooks* createList(void);
 void display(ListBooks*);
-void insertOnCreate(ListBooks* list, Book* data);
+void insertOnBeginning(ListBooks* list, Book* data);
 
 #endif
