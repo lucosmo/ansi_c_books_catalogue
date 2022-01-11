@@ -19,6 +19,22 @@ void insertOnBeginning(ListBooks* list, Book* data) {
   }
 }
 
+void insertAtEnd(ListBooks* list, Book* data) {
+  ListNode* new = (ListNode*)malloc(sizeof(ListNode));
+  ListNode* current;
+  new->data = data;
+
+  if(list->head == NULL)
+    list->head = new;
+  else {
+    current = list->head;
+    while(current != NULL) {
+      current = current->next;
+    }
+    current->next = new;
+  }
+}
+
 void display(ListBooks* list) {
   ListNode* current = (ListNode*)malloc(sizeof(ListNode));
   printf("Head: %p\n", list->head);
