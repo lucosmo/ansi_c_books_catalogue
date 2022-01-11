@@ -17,3 +17,13 @@ void insertOnBeginning(ListBooks* list, Book* data) {
     list->head = new;
   }
 }
+
+void display(ListBooks*) {
+  ListNode* current = (ListNode*)malloc(sizeof(ListNode));
+  printf("Head: %p\n", list->head);
+  current = list->head;
+  while(current != NULL) {
+    printf("current %p, next %p", current, current->next);
+    current = current->next;
+  }
+}
