@@ -31,7 +31,7 @@ void insertAtEnd(ListBooks* list, Book* data) {
     while(current != NULL) {
       current = current->next;
     }
-    current->next = new;
+    current = new;
   }
 }
 
@@ -40,7 +40,7 @@ void display(ListBooks* list) {
   printf("\nHead: %p\n", list->head);
   current = list->head;
   while(current != NULL) {
-    printf("- current %p, value is %p, - next %p\n", current, current->data, current->next);
+    printf("- current %p, value is %s, - next %p\n", current, (current->data)->title, current->next);
     current = current->next;
   }
 }

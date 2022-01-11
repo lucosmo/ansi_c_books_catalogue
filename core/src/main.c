@@ -11,16 +11,16 @@ int main() {
     Book b4 = {4,"title4","name4"};
 
     ListBooks* list = createList();
-/*
+
     insertOnBeginning(list,&b1);
     insertOnBeginning(list,&b2);
     insertOnBeginning(list,&b3);
     insertOnBeginning(list,&b4);
-*/
+/*
     insertAtEnd(list,&b1);
     insertAtEnd(list,&b2);
     insertAtEnd(list,&b3);
-    insertAtEnd(list,&b4);
+    insertAtEnd(list,&b4);*/
     display(list);
     freeList(list);
 
