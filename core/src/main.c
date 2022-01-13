@@ -8,7 +8,7 @@
 int main() {
 
 	char* filename = "books";
-	FILE* input_file = fopen(filename, "wrb+");
+	FILE* input_file = fopen(filename, "rb+");
     if (!input_file) {
 		perror("fopen");
         exit(EXIT_FAILURE);
@@ -40,10 +40,15 @@ int main() {
     fwrite(&b4, 1, sizeof(Book), input_file);
     printf("Done Writing!\n");
 */
-		Book buffer;
-		while(fread(&buffer, sizeof(Book), 1, input_file)==sizeof(Book)) {
-			printf("%d",sizeof(buffer);
-			insertAtEnd(list,&buffer);
+		Book* buffer;
+		if(!input_file) {
+			return 1;
+		}
+		for(int i=0;i<4;i++) {
+			fread(&buffer, sizeof(Book), 1, input_file);
+			printf("in while\n");
+			printf("%s\n",buffer.title);
+			insertAtEnd(list,buffer);
 		}
     fclose(input_file);
     display(list);
