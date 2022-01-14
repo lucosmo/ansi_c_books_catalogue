@@ -28,27 +28,27 @@ int main() {
 */
 /*
 		insertAtEnd(list,&b1);
-    fwrite(&b1, 1, sizeof(Book), input_file);
+    fwrite(&b1, sizeof(Book), 1, input_file);
     printf("Done Writing!\n");
     insertAtEnd(list,&b2);
-    fwrite(&b2, 1, sizeof(Book), input_file);
+    fwrite(&b2, sizeof(Book), 1, input_file);
     printf("Done Writing!\n");
     insertAtEnd(list,&b3);
-    fwrite(&b3, 1, sizeof(Book), input_file);
+    fwrite(&b3, sizeof(Book), 1, input_file);
     printf("Done Writing!\n");
     insertAtEnd(list,&b4);
-    fwrite(&b4, 1, sizeof(Book), input_file);
+    fwrite(&b4, sizeof(Book), 1, input_file);
     printf("Done Writing!\n");
 */
-		Book* buffer;
+		Book buffer;
 		if(!input_file) {
 			return 1;
 		}
 		for(int i=0;i<4;i++) {
 			fread(&buffer, sizeof(Book), 1, input_file);
 			printf("in while\n");
-			printf("%s\n",buffer.title);
-			insertAtEnd(list,buffer);
+			printf("%s\n",(buffer).title);
+			insertAtEnd(list, &buffer);
 		}
     fclose(input_file);
     display(list);
