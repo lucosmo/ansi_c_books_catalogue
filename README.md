@@ -8,11 +8,11 @@ On the list below, mark the implemented elements:
 - [ ] The project is based on a bidirectional list
 - [ ] Contains declarations, definitions, and the use of arrays
 - [ ] Contains declarations, definitions, and usage of structures
-- [ ] Uses dynamic memory allocation
+- [x] Uses dynamic memory allocation
 - [ ] Provides support for external files (text and / or binary)
-- [ ] Uses pointers
+- [x] Uses pointers
 - [ ] Does not contain global variables
-- [ ] Does not use libraries beyond the ANSI C standard 
+- [x] Does not use libraries beyond the ANSI C standard 
 
 ## Instructions
 - bash file 'startb' needs to be given permissions under linux: chmod u+x startb
