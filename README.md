@@ -7,11 +7,11 @@ On the list below, mark the implemented elements:
 - [ ] The project is compiled on Unix and Windows
 - [ ] The project is based on a bidirectional list
 - [ ] Contains declarations, definitions, and the use of arrays
-- [ ] Contains declarations, definitions, and usage of structures
+- [x] Contains declarations, definitions, and usage of structures
 - [x] Uses dynamic memory allocation
-- [ ] Provides support for external files (text and / or binary)
+- [x] Provides support for external files (text and / or binary)
 - [x] Uses pointers
-- [ ] Does not contain global variables
+- [x] Does not contain global variables
 - [x] Does not use libraries beyond the ANSI C standard 
 
 ## Instructions
