@@ -1,4 +1,4 @@
-# Book catalogue
+# Books catalogue
 
 ## Description:
 The project was created in connection with my desire to remember the knowledge about ANSI C 89, which I acquired during my studies at the Bialystok University of Technology.
