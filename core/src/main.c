@@ -46,8 +46,6 @@ int main() {
 		}
 		for(int i=0;i<4;i++) {
 			fread(&buffer, sizeof(Book), 1, input_file);
-			printf("in while\n");
-			printf("%s\n",(buffer).title);
 			insertAtEnd(list, &buffer);
 		}
     fclose(input_file);
