@@ -45,6 +45,7 @@ int main() {
 			return 1;
 		}
 		for(int i=0;i<4;i++) {
+			fseek(input_file,sizeof(Book)*i,SEEK_SET);
 			fread(&buffer, sizeof(Book), 1, input_file);
 			insertAtEnd(list, &buffer);
 		}
