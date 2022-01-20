@@ -48,7 +48,6 @@ int main() {
 			fread(&buffer, sizeof(Book), 1, input_file);
 			printf("%s\n", buffer.title);
 			insertAtEnd(list, &buffer);
-			display(list);
 		}
     fclose(input_file);
     display(list);

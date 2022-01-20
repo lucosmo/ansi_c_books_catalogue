@@ -30,10 +30,10 @@ void insertAtEnd(ListBooks* list, Book* data) {
   }
   else {
     current = list->head;
-    printf("%d\n",(current->data)->id);
+    printf("list is not empty\ngoing through all list:\n\n");
     while(current->next != NULL) {
       current = current->next;
-      printf("%s\n",(current->data)->title );
+      printf("while loop current: %s\n",(current->data)->title );
     }
     current->next = new;
     printf("new node added at the end title: %s\n", (current->data)->title);
