@@ -36,7 +36,7 @@ void insertAtEnd(ListBooks* list, Book* data) {
       printf("while loop current: %s\n",(current->data)->title );
     }
     current->next = new;
-    printf("new node added at the end title: %s\n", (current->data)->title);
+    printf("new node added at the end list: %s\n", (current->data)->title);
   }
 }
 
