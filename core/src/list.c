@@ -24,14 +24,19 @@ void insertAtEnd(ListBooks* list, Book* data) {
   ListNode* current;
   new->data = data;
 
-  if(list->head == NULL)
+  if(list->head == NULL){
     list->head = new;
+    printf("list is empty\n");
+  }
   else {
     current = list->head;
+    printf("%d\n",(current->data)->id);
     while(current->next != NULL) {
       current = current->next;
+      printf("%s\n",(current->data)->title );
     }
     current->next = new;
+    printf("new node added at the end title: %s\n", (current->data)->title);
   }
 }
 
