@@ -41,13 +41,18 @@ void insertAtEnd(ListBooks* list, Book* data) {
 }
 
 void display(ListBooks* list) {
-  ListNode* current = (ListNode*)malloc(sizeof(ListNode));
-  printf("\nHead: %p\n", list->head);
+  //ListNode* current = (ListNode*)malloc(sizeof(ListNode));
+  ListNode* current;
+if(list->head == NULL){
+ 
+    printf("list is empty\n");
+  }else{
+printf("\nHead: %p\n", list->head);
   current = list->head;
   while(current != NULL) {
     printf("- current %p, value is %s, - next %p\n", current, (current->data)->title, current->next);
     current = current->next;
-  }
+  }}
 }
 
 void freeList(ListBooks* list) {
