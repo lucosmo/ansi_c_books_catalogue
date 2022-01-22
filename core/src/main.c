@@ -44,10 +44,10 @@ int main() {
 		if(!input_file) {
 			return 1;
 		}
-		for(int i=0;i<4;i++) {
+		for(int i=0;i<2;i++) {
 			fread(&buffer, sizeof(Book), 1, input_file);
-			printf("%s\n", buffer.title);
-			insertAtEnd(list, &buffer);
+			printf("from file: %s\n", buffer.title);
+			insertAtEnd(&list, &buffer);
 		}
     fclose(input_file);
     display(list);
